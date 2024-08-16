@@ -2,7 +2,6 @@
 Time complexity: O(nlog(n)  + mlog(m))
 Space complexity: O(1)
 """
-
 def smallest_difference(arrayOne, arrayTwo):
     arrayOne.sort()
     arrayTwo.sort()
@@ -28,3 +27,6 @@ def smallest_difference(arrayOne, arrayTwo):
 arrayOne = [-1, 5, 10, 20, 28, 3]
 arrayTwo = [26, 134, 135, 15, 17]
 print(smallest_difference(arrayOne, arrayTwo))
+
+
+
