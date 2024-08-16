@@ -8,7 +8,7 @@ def timed(reps):
                 result = func(*args, **kwargs)
                 total_elapsed += perf_counter() - start
             avg_elapsed = total_elapsed / reps
-            print(f'{avg_elapsed=:.10f} seconds')
+            print(f'{func.__name__}: {avg_elapsed=:.10f} seconds')
             return result
         return inner
     return decorator

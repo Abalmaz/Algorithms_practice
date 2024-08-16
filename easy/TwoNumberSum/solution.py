@@ -1,6 +1,9 @@
-from SpeedTestWrapper import timed
+from decorators.SpeedTestWrapper import timed
 
-
+"""
+Time complexity: O(n*2)
+Space complexity: O(1)
+"""
 @timed(10)
 def two_number_sum(array, targetSum):
     for num in array:
@@ -9,8 +12,28 @@ def two_number_sum(array, targetSum):
             return [num, target]
     return []
 
+
+"""
+Time complexity: O(n)
+Space complexity: O(n)
+"""
 @timed(10)
 def two_number_sum2(array, targetSum):
+    nums = {}
+    for num in array:
+        target = targetSum - num
+        if target in nums:
+            return [num, target]
+        else:
+            nums[num] = True
+    return []
+
+"""
+Time complexity: nlog(n)
+Space complexity: O(1)
+"""
+@timed(10)
+def two_number_sum3(array, targetSum):
     array.sort()
     left_indx = 0
     right_indx = len(array) - 1
@@ -33,3 +56,4 @@ big_array = [i for i in range(16, 100_00)] + array
 targetSum = 10
 print(two_number_sum(big_array, targetSum))
 print(two_number_sum2(big_array, targetSum))
+print(two_number_sum3(big_array, targetSum))

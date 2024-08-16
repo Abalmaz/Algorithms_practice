@@ -28,12 +28,6 @@ class TestTwoNumberSum(unittest.TestCase):
             [6, -3]
         )
 
-    def test1(self):
-        self.assertCountEqual(two_number_sum(
-            [1, 2, 3, 4, 5, 6, 7, 8, 9], 17),
-            [8, 9]
-        )
-
     def test5(self):
         self.assertCountEqual(two_number_sum(
             [1, 2, 3, 4, 5, 6, 7, 8, 9, 15], 18),
@@ -74,4 +68,10 @@ class TestTwoNumberSum(unittest.TestCase):
         self.assertCountEqual(two_number_sum(
             [15], 15),
             []
+        )
+
+    def test12(self):
+        self.assertCountEqual(two_number_sum(
+            [1, 2, 3, 4, 5, 6, 7, 8, 9], 17),
+            [8, 9]
         )
