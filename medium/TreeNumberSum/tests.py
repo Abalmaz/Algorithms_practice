@@ -1,6 +1,6 @@
 import unittest
 
-from easy.TreeNumberSum.solution import three_number_sum
+from medium.TreeNumberSum.solution import three_number_sum
 
 
 class TestThreeNumberSum(unittest.TestCase):

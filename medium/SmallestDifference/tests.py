@@ -1,6 +1,6 @@
 import unittest
 
-from medium.smallestDifference.solution import smallest_difference
+from medium.SmallestDifference.solution import smallest_difference
 
 
 class TestThreeNumberSum(unittest.TestCase):
