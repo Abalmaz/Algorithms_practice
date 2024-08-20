@@ -22,6 +22,6 @@ test_data = [
 ]
 
 @pytest.mark.parametrize("array, expected", test_data)
-def test_isvalid_subsequence(array, expected):
+def test_sorted_squared_array(array, expected):
     actual = sortedSquaredArray(array)
     assert actual == expected
