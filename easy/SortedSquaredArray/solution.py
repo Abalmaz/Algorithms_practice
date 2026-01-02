@@ -1,5 +1,3 @@
-from audioop import reverse
-
 from decorators.SpeedTestWrapper import timed
 
 
