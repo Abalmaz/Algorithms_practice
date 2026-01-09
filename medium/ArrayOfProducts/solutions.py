@@ -14,7 +14,7 @@ def arrayOfProducts(array):
       Solution using Knowing What to Track pattern, specifically utilizing Prefix and Suffix Products.
 
       Time complexity: O(N),
-      Spice complexity: O(N)
+      Space complexity: O(N)
     """
     length = len(array)
     output = [1] * length
@@ -36,7 +36,7 @@ def arrayOfProducts_v2(array):
       Solution using division.
 
       Time complexity: O(N),
-      Spice complexity: O(N)
+      Space complexity: O(N)
     """
     total_multiply = 1
     for num in array:
